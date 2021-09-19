@@ -1,6 +1,5 @@
 package com.pokemon.springboot.service.impl;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,21 +29,13 @@ public class PokemonServiceImpl implements PokemonService {
                 .block();
 		
 		List<PokemonResult> pokemonResults = pokemonResponse.getResults();
-		List<PokemonResult> newPokemonResults = new ArrayList<PokemonResult>();
 		
-		for(int i = 0; i < pokemonResults.size(); i++) {
-			PokemonResult pokemonResult = new PokemonResult();
-			pokemonResult.setName(pokemonResults.get(i).getName());
-			String id = pokemonResults.get(i).getUrl().replace("https://pokeapi.co/api/v2/pokemon/","").replace("/", "");
-			pokemonResult.setUrl("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id +".png");
-			newPokemonResults.add(pokemonResult);
-		}
-		
-		return newPokemonResults;
+		return pokemonResults;
     }
 
 	@Override
 	public PokemonData getPokemon(String name) {
+		// TODO Auto-generated method stub
 		PokemonData pokemonData;
     	
 		pokemonData =  webClientBuilder.build()
