@@ -1,0 +1,35 @@
+package com.pokemon.springboot.service.impl;
+
+import java.time.Duration;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
+
+import com.pokemon.springboot.model.Pokemon;
+import com.pokemon.springboot.service.PokemonService;
+
+@Service
+public class PokemonServiceImpl implements PokemonService {
+
+    private static final Duration REQUEST_TIMEOUT = Duration.ofSeconds(3);
+
+    private final WebClient localApiClient;
+
+    @Autowired
+    public PokemonServiceImpl(WebClient localApiClient) {
+        this.localApiClient = localApiClient;
+    }
+
+    public List<Pokemon> getPokemonList() {
+        return localApiClient
+                .get()
+                .uri("")
+                .retrieve()
+                .bodyToFlux(Pokemon.class)
+                .collectList()
+                .block(REQUEST_TIMEOUT);
+    }
+
+}

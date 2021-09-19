@@ -1,0 +1,26 @@
+package com.pokemon.springboot.model;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Pokemon {
+	private String imageUrl;
+	
+	private String name;
+	
+	private String type;
+	
+	private String height;
+	
+	private String weight;
+	
+	private String numberOfBattles
+}
+
+
+public imageUrl?: string,
+    public name?: string,
+    public type?: string,
+    public height?: string,
+    public weight?: string,
+    public numberOfBattles?: string

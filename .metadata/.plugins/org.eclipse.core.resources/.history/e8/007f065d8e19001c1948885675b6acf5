@@ -1,0 +1,67 @@
+package com.pokemon.springboot.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
+
+import com.pokemon.springboot.model.Pokemon;
+import com.pokemon.springboot.model.PokemonResponse;
+import com.pokemon.springboot.model.PokemonResult;
+import com.pokemon.springboot.service.PokemonService;
+
+@Service
+public class PokemonServiceImpl implements PokemonService {
+
+	@Autowired
+	private WebClient.Builder webClientBuilder;
+	
+	@Override
+    public List<PokemonResult> getPokemonList() {
+		PokemonResponse pokemonResponse;
+    	
+		pokemonResponse =  webClientBuilder.build()
+                .get()
+                .uri("https://pokeapi.co/api/v2/pokemon?limit=2")
+                .retrieve()
+                .bodyToMono(PokemonResponse.class)
+                .block();
+		
+		List<PokemonResult> pokemonResults = pokemonResponse.getResults();
+		
+		return pokemonResults;
+    }
+
+	@Override
+	public Pokemon getPokemon(String name) {
+		// TODO Auto-generated method stub
+		Pokemon pokemon;
+		PokemonData pokemonData;
+    	
+		pokemon =  webClientBuilder.build()
+                .get()
+                .uri("https://pokeapi.co/api/v2/pokemon/" + name)
+                .retrieve()
+                .bodyToMono(Pokemon.class)
+                .block();
+		
+		
+//		const height = Number(data['height'])/10;
+//        const weight = Number(data['weight'])/10;
+//        const numberOfBattles = data['game_indices'].length.toString();
+//        const pokemon = {
+//          name: data['name'],
+//          imageUrl: data['sprites']["front_default"],
+//          type: data['types'][0].type.name,
+//          height: `${height}m`,
+//          weight: `${weight}kg`,
+//          numberOfBattles,
+//        }
+
+		
+		
+		return pokemon;
+	}
+
+}

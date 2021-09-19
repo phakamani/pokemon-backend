@@ -1,0 +1,22 @@
+package com.pokemon.springboot;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.client.RestTemplate;
+
+@SpringBootApplication
+public class PokemonBackendApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(PokemonBackendApplication.class, args);
+		
+		
+		final String uri = "https://pokeapi.co/api/v2/pokemon?limit=2";
+
+	    RestTemplate restTemplate = new RestTemplate();
+	    String result = restTemplate.getForObject(uri, String.class);
+
+	    System.out.println(result);
+	}
+
+}

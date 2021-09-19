@@ -1,0 +1,23 @@
+package com.pokemon.springboot.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.pokemon.springboot.model.PokemonResponse;
+import com.pokemon.springboot.service.PokemonService;
+
+@RestController
+public class PokemonController {
+	
+	private PokemonService pokemonService;
+	
+	public PokemonController(PokemonService pokemonService) {
+		super();
+		this.pokemonService = pokemonService;
+	}
+	
+	@GetMapping("/api/pokemon")
+	public PokemonResponse getPokemonList(){
+		return pokemonService.getPokemonList();
+	}
+}

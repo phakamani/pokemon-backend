@@ -1,0 +1,8 @@
+package com.pokemon.springboot.service;
+
+import java.util.List;
+import com.pokemon.springboot.model.Pokemon;
+
+public class PokemonService {
+	List<Pokemon> getPokemonList();
+}

@@ -1,0 +1,32 @@
+package com.pokemon.springboot.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
+
+import com.pokemon.springboot.model.Pokemon;
+import com.pokemon.springboot.model.PokemonResponse;
+import com.pokemon.springboot.service.PokemonService;
+
+@Service
+public class PokemonServiceImpl implements PokemonService {
+
+	@Autowired
+	private WebClient.Builder webClientBuilder;
+	
+	@Override
+    public PokemonResponse getPokemonList() {
+		PokemonResponse pokemonResponse;
+    	
+		pokemonResponse =  webClientBuilder.build()
+                .get()
+                .uri("https://pokeapi.co/api/v2/pokemon?limit=2")
+                .retrieve()
+                .bodyToMono(PokemonResponse.class)
+                .block();
+    	return pokemonResponse;
+    }
+
+}

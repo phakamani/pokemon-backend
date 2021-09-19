@@ -1,0 +1,32 @@
+package com.pokemon.springboot.controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.pokemon.springboot.model.PokemonResult;
+import com.pokemon.springboot.model.Pokemon;
+import com.pokemon.springboot.service.PokemonService;
+
+@RestController
+public class PokemonController {
+	
+	private PokemonService pokemonService;
+	
+	public PokemonController(PokemonService pokemonService) {
+		super();
+		this.pokemonService = pokemonService;
+	}
+	
+	@GetMapping("/api/pokemon")
+	public List<PokemonResult> getPokemonList(){
+		return pokemonService.getPokemonList();
+	}
+	
+	@GetMapping("/api/pokemon/{name}")
+	public Pokemon getPokemon(@PathVariable("name") String name){
+		return pokemonService.getPokemon(name);
+	}
+}

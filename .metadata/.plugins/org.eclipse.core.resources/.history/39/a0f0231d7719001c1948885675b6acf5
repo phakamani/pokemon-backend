@@ -1,0 +1,5 @@
+package com.pokemon.springboot.service;
+
+public class PokemonService {
+
+}
