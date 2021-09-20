@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
+import com.pokemon.springboot.model.Pokemon;
 import com.pokemon.springboot.model.PokemonData;
 import com.pokemon.springboot.model.PokemonResponse;
 import com.pokemon.springboot.model.PokemonResult;
@@ -24,7 +25,7 @@ public class PokemonServiceImpl implements PokemonService {
     	
 		pokemonResponse =  webClientBuilder.build()
                 .get()
-                .uri("https://pokeapi.co/api/v2/pokemon?limit=2")
+                .uri("https://pokeapi.co/api/v2/pokemon?limit=100")
                 .retrieve()
                 .bodyToMono(PokemonResponse.class)
                 .block();
@@ -44,7 +45,7 @@ public class PokemonServiceImpl implements PokemonService {
     }
 
 	@Override
-	public PokemonData getPokemon(String name) {
+	public Pokemon getPokemon(String name) {
 		PokemonData pokemonData;
     	
 		pokemonData =  webClientBuilder.build()
@@ -52,9 +53,17 @@ public class PokemonServiceImpl implements PokemonService {
                 .uri("https://pokeapi.co/api/v2/pokemon/" + name)
                 .retrieve()
                 .bodyToMono(PokemonData.class)
-                .block();		
-
-		return pokemonData;
+                .block();
+		
+		Pokemon pokemon = new Pokemon(
+				pokemonData.getSprites().getFront_default(), 
+				name, 
+				pokemonData.getTypes().get(0).getType().getName(), 
+				pokemonData.getHeight(),
+				pokemonData.getWeight(), 
+				pokemonData.getGame_indices().get(0).getGame_index());
+		
+		return pokemon;
 	}
 
 }

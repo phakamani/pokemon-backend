@@ -4,14 +4,15 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import lombok.AllArgsConstructor;
 
-
+@AllArgsConstructor
 @EqualsAndHashCode
 @ToString
 public class Pokemon {
 	@Setter
     @Getter
-	private String imageUrl;
+	private String url;
 	
 	@Setter
     @Getter
@@ -27,9 +28,9 @@ public class Pokemon {
 	
 	@Setter
     @Getter
-	private String weight;
+	private double weight;
 	
 	@Setter
     @Getter
-	private String numberOfBattles;
+	private int numberOfBattles;
 }

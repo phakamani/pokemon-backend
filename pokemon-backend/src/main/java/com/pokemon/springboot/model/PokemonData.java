@@ -15,7 +15,7 @@ public class PokemonData {
 	
 	@Setter
     @Getter
-	private String type;
+	private List<Type> types;
 	
 	@Setter
     @Getter
@@ -24,11 +24,9 @@ public class PokemonData {
 	
 	@Setter
     @Getter
-	private List<Object> game_indices;
+	private List<GameIndex> game_indices;
 	
 	@Setter
     @Getter
-    private Object sprites;
-	
-
+    private Sprite sprites;
 }
