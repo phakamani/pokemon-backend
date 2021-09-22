@@ -1,0 +1,36 @@
+package com.pokemon.springboot.model;
+
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
+@EqualsAndHashCode
+@ToString
+public class GameIndex {
+	@Setter
+    @Getter
+	private String url;
+	
+	@Setter
+    @Getter
+	private String name;
+	
+	@Setter
+    @Getter
+	private String type;
+	
+	@Setter
+    @Getter
+	private double height;
+	
+	@Setter
+    @Getter
+	private double weight;
+	
+	@Setter
+    @Getter
+	private int numberOfBattles;
+}

@@ -63,7 +63,6 @@ INDEX VERSION 1.131+C:\WorkSpace\springboot\pokemon-backend\.metadata\.plugins\o
 2553932955.index
 1737803970.index
 1498711954.index
-1508470803.index
 599987488.index
 3705768745.index
 1333404732.index
