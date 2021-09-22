@@ -830,3 +830,872 @@ Java Model Exception: Java Model Status [PokemonService [in PokemonController [i
 
 !ENTRY Activator 1 0 2021-09-19 23:44:00.780
 !MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 13:18:12.294
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.KbYkXeVK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 13:18:12.296
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.KbYkXeVK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 13:18:12.297
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 13:18:12.298
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.KbYkXeVK => OK
+!SESSION 2021-09-20 20:06:09.254 -----------------------------------------------
+eclipse.buildId=4.18.0.I20201202-1800
+java.version=15.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ZA
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2021-09-20 20:06:25.338
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-09-20 20:06:25.338
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@17e6b7e4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@44c27b8b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 20:06:35.306
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 20:06:35.306
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@2b1e7957[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=490)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 20:06:35.332
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 20:06:35.602
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY Activator 1 0 2021-09-20 20:06:37.494
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-09-20 20:06:40.259
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\mkuli'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-09-20 20:06:44.100
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1950)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2085)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 20:06:47.145
+!MESSAGE Boot LS startup time from start to initialized: 11805ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 20:06:47.381
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.cykzANeMisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 20:06:47.386
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 20:06:47.389
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 20:06:47.390
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 20:06:47.391
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 20:06:47.392
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.cykzANeM => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 20:06:47.421
+!MESSAGE classpath=117 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 20:06:47.433
+!MESSAGE buffering callback sts4.classpath.cykzANeM pokemon-backend false 117
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 20:06:47.434
+!MESSAGE executing callback sts4.classpath.cykzANeM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 20:06:49.446
+!MESSAGE executing callback sts4.classpath.cykzANeM FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2021-09-20 20:06:49.447
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1950)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2085)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 2 2 2021-09-20 20:06:51.272
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY Activator 1 0 2021-09-20 20:14:43.213
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:14:43.802
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:14:45.220
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:14:46.855
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:15:48.680
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:15:49.467
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:15:49.603
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:23:10.603
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:23:11.274
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:23:48.156
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:23:48.821
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:24:27.185
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:24:27.883
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:27:43.108
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:27:43.762
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:28:33.781
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:28:34.390
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:32:00.075
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:32:00.792
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:34:21.328
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:34:21.993
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:36:50.861
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:36:51.556
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:37:19.156
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:37:19.791
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:43:41.700
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:43:42.332
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:45:13.196
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:45:13.828
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:46:29.043
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:46:29.743
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:50:40.973
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 20:50:41.688
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 21:00:04.005
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 21:00:04.652
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 21:03:34.922
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 21:03:35.631
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 21:03:58.877
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 21:03:59.464
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 21:05:01.376
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 21:05:02.169
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-09-20 21:07:08.877
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY Activator 1 0 2021-09-20 21:08:26.563
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 21:08:27.250
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-09-20 21:08:30.646
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1950)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2085)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY Activator 1 0 2021-09-20 21:08:46.225
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 21:08:46.893
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 21:10:51.222
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 21:10:51.990
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 21:13:36.503
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 21:13:37.116
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 21:23:20.313
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 21:23:21.073
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 22:00:54.562
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 22:00:55.284
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 22:01:24.667
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 22:01:25.378
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 22:02:50.175
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 22:02:50.960
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 22:05:06.501
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 22:05:07.157
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 22:09:01.325
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 22:09:01.959
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 22:10:55.754
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 22:10:56.408
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 22:13:21.183
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 22:13:21.844
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 22:15:19.030
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 22:15:19.676
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 22:15:49.253
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 22:15:49.905
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 22:16:43.800
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 22:16:44.414
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 22:56:07.227
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 22:56:26.985
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 22:56:26.988
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 22:56:27.004
+!MESSAGE classpath=132 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 22:56:27.018
+!MESSAGE buffering callback sts4.classpath.cykzANeM pokemon-backend false 132
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 22:56:27.019
+!MESSAGE executing callback sts4.classpath.cykzANeM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 22:56:27.088
+!MESSAGE executing callback sts4.classpath.cykzANeM SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-09-20 22:56:28.091
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 22:56:28.825
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 22:56:53.643
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 22:56:53.644
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 22:56:53.656
+!MESSAGE classpath=132 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 22:56:53.664
+!MESSAGE buffering callback sts4.classpath.cykzANeM pokemon-backend false 132
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 22:56:53.665
+!MESSAGE executing callback sts4.classpath.cykzANeM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 22:56:53.787
+!MESSAGE executing callback sts4.classpath.cykzANeM SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-09-20 22:56:54.410
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 23:00:14.825
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 23:00:15.389
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 23:05:27.776
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 23:05:31.563
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 23:05:31.565
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 23:05:31.575
+!MESSAGE classpath=133 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 23:05:31.582
+!MESSAGE buffering callback sts4.classpath.cykzANeM pokemon-backend false 133
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 23:05:31.583
+!MESSAGE executing callback sts4.classpath.cykzANeM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 23:05:31.699
+!MESSAGE executing callback sts4.classpath.cykzANeM SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-09-20 23:05:32.971
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 23:05:33.959
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 23:05:36.696
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 23:05:36.697
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 23:05:36.707
+!MESSAGE classpath=133 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 23:05:36.716
+!MESSAGE buffering callback sts4.classpath.cykzANeM pokemon-backend false 133
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 23:05:36.718
+!MESSAGE executing callback sts4.classpath.cykzANeM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 23:05:36.766
+!MESSAGE executing callback sts4.classpath.cykzANeM SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-09-20 23:05:37.278
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 23:07:58.243
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 23:07:58.920
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 23:08:29.680
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 23:08:30.290
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 23:11:06.945
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 23:11:07.558
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 23:25:43.727
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 23:25:44.388
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 23:27:02.881
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 23:27:03.523
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 23:27:36.997
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 23:27:37.656
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 23:29:35.546
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 23:29:36.180
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 23:36:18.852
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 23:36:36.602
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 23:36:36.603
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 23:36:36.611
+!MESSAGE classpath=131 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 23:36:36.619
+!MESSAGE buffering callback sts4.classpath.cykzANeM pokemon-backend false 131
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 23:36:36.619
+!MESSAGE executing callback sts4.classpath.cykzANeM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 23:36:36.657
+!MESSAGE executing callback sts4.classpath.cykzANeM SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-09-20 23:36:37.357
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 23:36:38.049
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY Activator 1 0 2021-09-20 23:37:00.078
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 23:37:00.079
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 23:37:00.088
+!MESSAGE classpath=131 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 23:37:00.095
+!MESSAGE buffering callback sts4.classpath.cykzANeM pokemon-backend false 131
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 23:37:00.101
+!MESSAGE executing callback sts4.classpath.cykzANeM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 23:37:00.146
+!MESSAGE executing callback sts4.classpath.cykzANeM SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-09-20 23:37:00.509
+!MESSAGE Has main method computation for project 'pokemon-backend'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 23:40:44.045
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.cykzANeM
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 23:40:44.046
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.cykzANeM
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 23:40:44.047
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-20 23:40:44.048
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.cykzANeM => OK
+!SESSION 2021-09-21 08:44:08.342 -----------------------------------------------
+eclipse.buildId=4.18.0.I20201202-1800
+java.version=15.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ZA
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2021-09-21 08:44:38.887
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-09-21 08:44:38.887
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@30b9728f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6b899971,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-09-21 08:45:01.848
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\mkuli'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 2 2021-09-21 08:45:51.443
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-21 08:49:40.584
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-21 08:49:40.585
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@6179551b[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=490)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-21 08:49:40.607
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-21 08:49:40.854
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-21 08:49:47.630
+!MESSAGE Boot LS startup time from start to initialized: 7012ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-21 08:49:48.693
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.gBtUFmPwisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-21 08:49:48.699
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-21 08:49:48.702
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-21 08:49:48.704
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-21 08:49:48.706
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.gBtUFmPw => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-21 08:49:48.708
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-21 08:49:48.733
+!MESSAGE classpath=131 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-21 08:49:48.746
+!MESSAGE buffering callback sts4.classpath.gBtUFmPw pokemon-backend false 131
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-21 08:49:48.747
+!MESSAGE executing callback sts4.classpath.gBtUFmPw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-21 08:49:50.759
+!MESSAGE executing callback sts4.classpath.gBtUFmPw FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2021-09-21 08:49:50.761
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1950)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2085)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-09-21 12:15:11.951
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1950)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2085)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 06:59:51.052
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.gBtUFmPw
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 06:59:51.056
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.gBtUFmPw
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 06:59:51.059
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 06:59:51.061
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.gBtUFmPw => OK
+!SESSION 2021-09-22 08:01:54.567 -----------------------------------------------
+eclipse.buildId=4.18.0.I20201202-1800
+java.version=15.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ZA
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2021-09-22 08:02:08.099
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-09-22 08:02:08.099
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@30b9728f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6b899971,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 08:02:23.062
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 08:02:23.062
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@3da00d99[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=490)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 08:02:23.081
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 08:02:23.540
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-09-22 08:02:26.290
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\mkuli'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 08:02:34.067
+!MESSAGE Boot LS startup time from start to initialized: 10956ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 08:02:35.351
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.OQeDpUjYisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 08:02:35.356
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 08:02:35.359
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 08:02:35.360
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 08:02:35.361
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.OQeDpUjY => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 08:02:35.363
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 08:02:35.403
+!MESSAGE classpath=131 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 08:02:35.417
+!MESSAGE buffering callback sts4.classpath.OQeDpUjY pokemon-backend false 131
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 08:02:35.418
+!MESSAGE executing callback sts4.classpath.OQeDpUjY 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 08:02:37.485
+!MESSAGE executing callback sts4.classpath.OQeDpUjY FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2021-09-22 08:02:37.487
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1950)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2085)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 2 2 2021-09-22 08:03:16.513
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 22:33:57.709
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.OQeDpUjY
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 22:33:57.710
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.OQeDpUjY
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 22:33:57.711
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 22:33:57.713
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.OQeDpUjY => OK
+!SESSION 2021-09-22 22:34:32.170 -----------------------------------------------
+eclipse.buildId=4.18.0.I20201202-1800
+java.version=15.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ZA
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2021-09-22 22:34:42.547
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-09-22 22:34:42.547
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@64540344,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@b2d8dcd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 22:34:50.849
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 22:34:50.850
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@260e63df[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=490)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 22:34:50.860
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 22:34:51.099
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-09-22 22:34:55.145
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\mkuli'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 22:35:02.342
+!MESSAGE Boot LS startup time from start to initialized: 11466ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 22:35:03.318
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.IPvwTzaTisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 22:35:03.323
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 22:35:03.326
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 22:35:03.327
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 22:35:03.328
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 22:35:03.329
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.IPvwTzaT => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 22:35:03.366
+!MESSAGE classpath=131 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 22:35:03.374
+!MESSAGE buffering callback sts4.classpath.IPvwTzaT pokemon-backend false 131
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 22:35:03.375
+!MESSAGE executing callback sts4.classpath.IPvwTzaT 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-22 22:35:05.374
+!MESSAGE executing callback sts4.classpath.IPvwTzaT SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2021-09-22 22:35:32.680
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
