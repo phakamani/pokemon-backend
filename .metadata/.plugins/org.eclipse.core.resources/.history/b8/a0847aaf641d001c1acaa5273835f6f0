@@ -1,11 +1,13 @@
 package com.pokemon.springboot.model;
 
-import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 import lombok.AllArgsConstructor;
 
-
-@Data
-@AllArgsConstructor
+@Setter
+@Getter
 public class Pokemon {
 	private String url;
 	

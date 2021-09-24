@@ -12,7 +12,7 @@ import com.pokemon.springboot.model.PokemonResult;
 import com.pokemon.springboot.model.Pokemon;
 import com.pokemon.springboot.service.PokemonService;
 
-@CrossOrigin(origins = {"http://localhost:4200", "https://mkulise.co.za"}, maxAge = 3600)
+@CrossOrigin(origins = {"http://localhost:4200", "https://pokemon-demo-frontend.herokuapp.com"}, maxAge = 3600)
 @RestController
 @RequestMapping("/api")
 public class PokemonController {

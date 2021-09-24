@@ -55,7 +55,6 @@ public class PokemonServiceImpl implements PokemonService {
                 .bodyToMono(PokemonData.class)
                 .block();
 		
-		
 		Pokemon pokemon = new Pokemon(
 				pokemonData.getSprites().getFront_default(), 
 				name, 
